@@ -1,0 +1,93 @@
+Building Name,Floor,Adjacent Rooms,Gender,Single Occ.,# Stalls,# Urinals,Urinal Partitions,Full Length Door,ADA Accessible,Hangers,Auto. Flushing,Free Menstrual Products,Changing Table,Building Hours,Access Restrictions,Additional Notes
+Clark Hall,2,"271, 290",Neutral,Yes,1,0,N/A,Yes,Yes,Inside Stall,Yes,Yes,No,Open 24/7,N/A,Gross
+Clark Hall,2,"271, 290",Neutral,Yes,1,0,N/A,Yes,Yes,Inside Stall,Yes,Yes,No,Open 24/7,N/A,Gross
+Clark Hall,2,"279, 281",Neutral,No,4,0,N/A,Yes,Yes,Inside Stall,No,Yes,No,Open 24/7,N/A,Generally clean
+Duffield Hall,1,Mattin's Cafe,Male,No,,,,,,,,,,Open 24/7,N/A,
+Duffield Hall,2,"236, 250A",Male,No,,,,,,,,,,Open 24/7,N/A,
+Duffield Hall,3,350,Male,No,,,,,,,,,,Open 24/7,N/A,
+Duffield Hall,1,Mattin's Cafe,Female,No,5,0,N/A,No,Yes,Inside Stall,No,Yes,No,Open 24/7,N/A,
+Duffield Hall,2,"236, 250A",Female,No,4,0,N/A,No,Yes,Inside Stall,No,Yes,No,Open 24/7,N/A,
+Duffield Hall,3,350,Female,No,4,0,N/A,No,Yes,Inside Stall,No,Yes,No,Open 24/7,N/A,
+Gates Hall,G,"G20, G23",Male,No,3,4,Yes,No,Yes,Inside Stall,Yes,,No,"7 AM - 9 PM (M-F), 7 AM - 7 PM (SS)",Card access after 9 PM,
+Gates Hall,1,108,Male,No,3,3,Yes,No,Yes,Inside Stall,Yes,,No,"7 AM - 9 PM (M-F), 7 AM - 7 PM (SS)",Card access after 9 PM,
+Gates Hall,2,212,Male,No,2,3,Yes,No,Yes,Inside Stall,Yes,,No,"7 AM - 9 PM (M-F), 7 AM - 7 PM (SS)",Card access after 9 PM,
+Gates Hall,3,322,Male,No,2,3,Yes,No,Yes,Inside Stall,Yes,,No,"7 AM - 9 PM (M-F), 7 AM - 7 PM (SS)",Card access after 9 PM,
+Gates Hall,4,424,Male,No,2,3,Yes,No,Yes,Inside Stall,Yes,,No,"7 AM - 9 PM (M-F), 7 AM - 7 PM (SS)",Card access after 9 PM,
+Gates Hall,G,"G15, G17",Female,No,6,6,N/A,No,Yes,Inside Stall,Yes,Yes,No,"7 AM - 9 PM (M-F), 7 AM - 7 PM (SS)",Card access after 9 PM,
+Gates Hall,1,108,Female,No,4,0,N/A,No,Yes,Inside Stall,Yes,Yes,No,"7 AM - 9 PM (M-F), 7 AM - 7 PM (SS)",Card access after 9 PM,
+Gates Hall,2,211,Female,No,4,0,N/A,No,Yes,Inside Stall,Yes,Yes,No,"7 AM - 9 PM (M-F), 7 AM - 7 PM (SS)",Card access after 9 PM,
+Gates Hall,3,323,Female,No,4,0,N/A,No,Yes,Inside Stall,Yes,Yes,No,"7 AM - 9 PM (M-F), 7 AM - 7 PM (SS)",Card access after 9 PM,
+Gates Hall,4,419,Female,No,4,0,N/A,No,Yes,Inside Stall,Yes,Yes,No,"7 AM - 9 PM (M-F), 7 AM - 7 PM (SS)",Card access after 9 PM,
+Hollister Hall,B,B29,Male,No,1,2,Yes,No,Yes,Inside Stall,No,,No,7 AM - 9 PM,"Card access after 9 PM, engineers have access",
+Hollister Hall,1,"126, 150",Male,No,2,4,No,No,Yes,Inside Stall,No,,No,7 AM - 9 PM,"Card access after 9 PM, engineers have access",
+Hollister Hall,2,"223, 266",Male,No,3,4,No,No,No,Inside Stall,No,,No,7 AM - 9 PM,"Card access after 9 PM, engineers have access",
+Hollister Hall,3,"329, 351",Male,No,3,4,No,No,No,Inside Stall,No,,No,7 AM - 9 PM,"Card access after 9 PM, engineers have access",
+Hollister Hall,B,B29,Female,No,2,0,N/A,No,Yes,Inside Stall,No,No,No,7 AM - 9 PM,"Card access after 9 PM, engineers have access",
+Hollister Hall,1,"126, 150",Female,No,1,0,N/A,No,Yes,Inside Stall,No,No,No,7 AM - 9 PM,"Card access after 9 PM, engineers have access",
+Hollister Hall,2,"223, 266",Female,No,3,0,N/A,No,No,Inside Stall,No,No,No,7 AM - 9 PM,"Card access after 9 PM, engineers have access","Two chairs and table outside stall area, but inside bathroom signage (people often use to hold belongings)"
+Hollister Hall,4,"425, 461",Female,No,3,0,N/A,No,No,Inside Stall,No,No,No,7 AM - 9 PM,"Card access after 9 PM, engineers have access",Couch inside bathroom (people often use to hold belongings)
+Ives Hall,2,206,Male,No,,,,,,,,,,"6 AM - 11 PM (M-Th), 6 AM - 5 PM (F)",,
+Ives Hall,2,206,Female,No,4,0,N/A,No,Yes,None,No,Yes,No,"6 AM - 11 PM (M-Th), 6 AM - 5 PM (F)",,
+Phillips Hall,1,"105, 107",Male,No,,,,,,,,,,Open 24/7,N/A,
+Phillips Hall,2,221,Male,No,3,4,No,Yes,Yes,,,,,Open 24/7,N/A,
+Phillips Hall,3,319,Male,No,2,4,No,No,No,,,,,Open 24/7,N/A,
+Phillips Hall,4,420,Male,No,,,,,,,,,,Open 24/7,N/A,
+Phillips Hall,1,"105, 107",Female,Yes,1,0,N/A,No,No,Outside Stall,No,No,No,Open 24/7,N/A,
+Phillips Hall,2,219,Female,No,3,0,N/A,Yes,Yes,Both Inside and Outside Stall,Yes,Yes,No,Open 24/7,N/A,
+Phillips Hall,3,319,Female,No,2,0,N/A,No,Yes,Inside Stall,No,No,No,Open 24/7,N/A,
+Phillips Hall,4,418,Female,No,2,0,N/A,No,Yes,Inside Stall,No,No,No,Open 24/7,N/A,
+Phillips Hall,4,420,Neutral,Yes,1,0,N/A,Yes,Yes,Inside Stall,No,No,No,Open 24/7,N/A,
+Physical Sciences Building,1,131,Male,No,3,2,Yes,No,Yes,Inside Stall,Yes,,No,Open 24/7,N/A,
+Physical Sciences Building,2,273,Male,No,2,1,Yes,No,Yes,Inside Stall,Yes,,No,Open 24/7,N/A,
+Physical Sciences Building,3,"375, 379",Male,No,2,1,Yes,No,Yes,Inside Stall,Yes,,No,Open 24/7,N/A,
+Physical Sciences Building,4,457,Male,No,2,1,Yes,No,Yes,Inside Stall,Yes,,No,Open 24/7,N/A,
+Physical Sciences Building,1,131,Female,No,10,0,N/A,No,Yes,Inside Stall,Yes,Yes,No,Open 24/7,N/A,Foul odor usually
+Physical Sciences Building,2,273,Female,No,3,0,N/A,No,Yes,Inside Stall,Yes,Yes,No,Open 24/7,N/A,
+Physical Sciences Building,3,"375, 379",Female,No,3,0,N/A,No,Yes,Inside Stall,Yes,Yes,No,Open 24/7,N/A,
+Physical Sciences Building,4,457,Female,No,3,0,N/A,No,Yes,Inside Stall,Yes,Yes,No,Open 24/7,N/A,
+Rhodes Hall,1,160,Male,No,,,,No,,,,,No,Open 24/7,N/A,
+Rhodes Hall,2,212,Male,No,,,,No,,,,,No,Open 24/7,N/A,
+Rhodes Hall,3,310,Male,No,,,,No,,,,,No,Open 24/7,N/A,
+Rhodes Hall,4,411,Male,No,,,,No,,,,,No,Open 24/7,N/A,
+Rhodes Hall,5,508,Male,No,,,,No,,,,,No,Open 24/7,N/A,
+Rhodes Hall,6,610,Male,No,,,,No,,,,,No,Open 24/7,N/A,
+Rhodes Hall,7,708,Male,No,,,,No,,,,,No,Open 24/7,N/A,
+Rhodes Hall,1,160,Female,No,2,0,N/A,No,Yes,Inside Stall,No,Yes,No,Open 24/7,N/A,
+Rhodes Hall,2,206,Female,No,4,0,N/A,No,Yes,Inside Stall,No,Yes,No,Open 24/7,N/A,
+Rhodes Hall,3,310,Female,No,4,0,N/A,No,Yes,Inside Stall,No,Yes,No,Open 24/7,N/A,
+Rhodes Hall,4,411,Female,No,4,0,N/A,No,Yes,Inside Stall,No,Yes,No,Open 24/7,N/A,
+Rhodes Hall,5,508,Female,No,4,0,N/A,No,Yes,Inside Stall,No,Yes,No,Open 24/7,N/A,
+Rhodes Hall,6,608,Female,No,4,0,N/A,No,Yes,Inside Stall,No,Yes,No,Open 24/7,N/A,
+Rhodes Hall,7,708,Female,No,4,0,N/A,No,Yes,Inside Stall,No,Yes,No,Open 24/7,N/A,
+Space Sciences Building,1,105,Female,No,3,0,N/A,No,Yes,Inside Stall,No,No,Yes,8 AM - 4:30 PM (M-F),,
+Tang Hall,1,193,Neutral,Yes,1,0,N/A,Yes,Yes,Inside Stall,Yes,Yes,No,,,In corridor next to staircase 
+Tang Hall,1,197,Neutral,Yes,1,0,N/A,Yes,Yes,Inside Stall,Yes,Yes,No,,,By east most side exit
+Tang Hall,2,236,Neutral,Yes,1,0,N/A,Yes,Yes,Inside Stall,Yes,Yes,No,,,In corridor across from 236
+Tang Hall,2,236,Neutral,Yes,1,0,N/A,Yes,Yes,Inside Stall,Yes,Yes,No,,,In corridor across from 236
+Tang Hall,3,301,Neutral,Yes,1,0,N/A,Yes,Yes,Inside Stall,Yes,Yes,No,,,In corridor next to 301
+Tang Hall,3,301,Neutral,Yes,1,0,N/A,Yes,Yes,Inside Stall,Yes,Yes,No,,,In corridor next to 301
+Tang Hall,4,"418, 407",Neutral,Yes,1,0,N/A,Yes,Yes,Inside Stall,Yes,Yes,No,,,In corridor next to 407
+Tang Hall,4,"418, 407",Neutral,Yes,1,0,N/A,Yes,Yes,Inside Stall,Yes,Yes,No,,,Across from elevator
+Tang Hall,1,111,Male,No,,,,,,,,,,,,
+Tang Hall,2,206,Male,No,,,,,,,,,,,,Across from elevator
+Tang Hall,4,400,Male,No,,,,,,,,,,,,
+Tang Hall,1,111,Female,No,3,0,N/A,No,Yes,Inside Stall,Yes,Yes,No,,,Shelves for belongings
+Tang Hall,3,320,Female,No,4,0,N/A,No,Yes,Inside Stall,No,Yes,No,,,Across from elevator
+Tang/ Kimball Hall,1,"172, 171",Neutral,Yes,1,0,N/A,Yes,Yes,Inside Stall,No,Yes,Yes,,,Next to entrance
+Upson Hall,1,125,Neutral,Yes,1,0,N/A,Yes,Yes,None,No,No,Yes,Open 24/7,N/A,
+Upson Hall,2,225,Neutral,Yes,1,0,N/A,Yes,Yes,Inside Stall,No,No,No,Open 24/7,N/A,
+Upson Hall,3,325,Neutral,Yes,1,0,N/A,Yes,Yes,Inside Stall,No,No,No,Open 24/7,N/A,
+Upson Hall,4,425,Neutral,Yes,1,0,N/A,Yes,Yes,Inside Stall,No,No,No,Open 24/7,N/A,
+Upson Hall,5,525,Neutral,Yes,1,0,N/A,Yes,Yes,Inside Stall,No,No,No,Open 24/7,N/A,
+Upson Hall,1,125,Male,No,,,,,,,,,,Open 24/7,N/A,
+Upson Hall,2,225,Male,No,,,,,,,,,,Open 24/7,N/A,
+Upson Hall,3,325,Male,No,,,,,,,,,,Open 24/7,N/A,
+Upson Hall,4,425,Male,No,,,,,,,,,,Open 24/7,N/A,
+Upson Hall,5,525,Male,No,,,,,,,,,,Open 24/7,N/A,
+Upson Hall,1,125,Female,No,6,0,N/A,No,Yes,Inside Stall,No,No,No,Open 24/7,N/A,
+Upson Hall,2,225,Female,No,6,0,N/A,No,Yes,Inside Stall,No,Yes,No,Open 24/7,N/A,
+Upson Hall,3,325,Female,No,6,0,N/A,No,Yes,Inside Stall,No,Yes,No,Open 24/7,N/A,
+Upson Hall,4,425,Female,No,6,0,N/A,No,Yes,Inside Stall,No,Yes,No,Open 24/7,N/A,
+Upson Hall,5,525,Female,No,6,0,N/A,No,Yes,Inside Stall,No,Yes,No,Open 24/7,N/A,
+Carpenter Hall,1,114,Female,No,2,0,N/A,No,No,Both Inside and Outside Stall,No,Yes,No,Open 24/7,engineering students,in hallway by staircase
+Carpenter Hall,1,114,Male,No,3,4,Yes,No,No,Both Inside and Outside Stall,No,No,No,Open 24/7,engineering student,in hallway by staircase

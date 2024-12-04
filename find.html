@@ -1,0 +1,228 @@
+<!DOCTYPE HTML> 
+<!--
+    Editorial by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Cornell Bathroom Finder</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+        <style>
+            table {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+            }
+            .filter-container {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+            .filter-container select {
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Main -->
+            <div id="main">
+                <div class="inner">
+
+                    <!-- Header -->
+                    <header id="header">
+                        <a href="index.html" class="logo"><strong>Cornell Bathroom Finder</strong> by ENGRC 3500 Group 3</a>
+                    </header>
+
+                    <!-- Content -->
+                    <section>
+                        <header class="main">
+                            <h1>Find a Bathroom</h1>
+                        </header>
+
+                        <h2>Search the Cornell Bathroom Excel Database</h2>    
+
+                        <p>Below is a searchable and filterable table designed to help you quickly and efficiently locate restrooms across the Cornell campus.</p>
+                        
+                        <hr class="major" />
+
+                        <!-- Filters Section -->
+                        <div class="filter-container">
+                            <select id="filter-building" onchange="filterTable()">
+                                <option value="">Select Building</option>
+                                <!-- Options will be dynamically generated -->
+                            </select>
+
+                            <select id="filter-gender" onchange="filterTable()">
+                                <option value="">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="All">All</option>
+                            </select>
+
+                            <select id="filter-ADA" onchange="filterTable()">
+                                <option value="">ADA Accessible</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+
+                        <!-- Table Section -->
+                        <table id="bathroom-table">
+                            <thead>
+                                <tr>
+                                    <th>Building Name</th>
+                                    <th>Floor</th>
+                                    <th>Adjacent Rooms</th>
+                                    <th>Gender</th>
+                                    <th>Single Occ.</th>
+                                    <th># Stalls</th>
+                                    <th># Urinals</th>
+                                    <th>Urinal Partitions</th>
+                                    <th>Full Length Door</th>
+                                    <th>ADA Accessible</th>
+                                    <th>Hangers</th>
+                                    <th>Auto. Flushing</th>
+                                    <th>Free Menstrual Products</th>
+                                    <th>Changing Table</th>
+                                    <th>Building Hours</th>
+                                    <th>Access Restrictions</th>
+                                    <th>Additional Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Data will be populated dynamically from the CSV file -->
+                            </tbody>
+                        </table>
+
+                    </section>
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div id="sidebar">
+                <div class="inner">
+
+                    <section id="search" class="alt">
+                        <div style="height: 0px;"></div>
+                    </section>
+
+                    <!-- Menu -->
+                    <nav id="menu">
+                        <header class="major">
+                            <h2>Menu</h2>
+                        </header>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="find.html">Find a Bathroom</a></li>
+                            <li><a href="about.html">About the Project</a></li>
+                            <li><a href="mission.html">Our Purpose</a></li>
+                            <li><a href="contact.html">Get in Touch</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Footer -->
+                    <footer id="footer">
+                        <p class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                    </footer>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <!-- DataTables Script -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                // Initialize DataTable
+                $('#bathroom-table').DataTable();
+
+                // Load CSV data
+                Papa.parse("3500Final/bathrooms.csv", {
+					download: true,
+					header: true,
+					dynamicTyping: true,
+					complete: function(results) {
+						console.log("CSV Data:", results.data);  // Log the parsed data to check if it's correct
+						var table = $('#bathroom-table').DataTable();
+						var data = results.data;
+				
+						if (data.length === 0) {
+							console.log("No data found in CSV");
+						}
+				
+						// Add data to the table
+						data.forEach(function(row) {
+							table.row.add([
+								row["Building Name"],
+								row["Floor"],
+								row["Adjacent Rooms"],
+								row["Gender"],
+								row["Single Occ."],
+								row["# Stalls"],
+								row["# Urinals"],
+								row["Urinal Partitions"],
+								row["Full Length Door"],
+								row["ADA Accessible"],
+								row["Hangers"],
+								row["Auto. Flushing"],
+								row["Free Menstrual Products"],
+								row["Changing Table"],
+								row["Building Hours"],
+								row["Access Restrictions"],
+								row["Additional Notes"]
+							]).draw();
+						});
+				
+						// Populate Building Dropdown dynamically
+						var buildings = [...new Set(data.map(row => row["Building Name"]))];
+						var buildingDropdown = $('#filter-building');
+						buildings.forEach(function(building) {
+							buildingDropdown.append(new Option(building, building));
+						});
+					},
+					error: function(error) {
+						console.log("Error loading CSV:", error);
+					}
+				});
+
+                // Filter Table Function
+                window.filterTable = function() {
+                    var table = $('#bathroom-table').DataTable();
+                    var buildingFilter = $('#filter-building').val();
+                    var genderFilter = $('#filter-gender').val();
+                    var ADAFilter = $('#filter-ADA').val();
+
+                    table
+                        .column(0).search(buildingFilter ? buildingFilter : '', true, false) // Building Name
+                        .column(3).search(genderFilter ? genderFilter : '', true, false) // Gender
+                        .column(9).search(ADAFilter ? ADAFilter : '', true, false) // ADA Accessible
+                        .draw();
+                }
+            });
+        </script>
+
+    </body>
+</html>
