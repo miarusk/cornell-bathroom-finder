@@ -1,199 +1,161 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>Cornell Bathroom Finder</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
+<head>
+    <title>Cornell Bathroom Finder</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 
-        <!-- Include jQuery -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-        <!-- Include PapaParse library (make sure this link is correct) -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <!-- Include PapaParse -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 
-        <!-- Include DataTables CSS -->
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css">
-        <!-- Include DataTables JS -->
-        <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
+    <!-- Include DataTables CSS/JS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
 
-    </head>
-    <body class="is-preload">
+	
+</head>
+<body>
 
-        <!-- Wrapper -->
-        <div id="wrapper">
 
-            <!-- Main -->
-            <div id="main">
-                <div class="inner">
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-                    <!-- Header -->
-                    <header id="header">
-                        <a href="index.html" class="logo"><strong>Cornell Bathroom Finder</strong> by ENGRC 3500 Group 3</a>
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                <header id="header">
+                    <a href="index.html" class="logo"><strong>Cornell Bathroom Finder</strong> by ENGRC 3500 Group 3</a>
+                </header>
+
+                <section>
+                    <header class="main">
+                        <h1>Find a Bathroom</h1>
                     </header>
 
-                    <!-- Content -->
                     <section>
-                        <header class="main">
-                            <h1>Find a Bathroom</h1>
-                        </header>
-
-                        <!-- Filter Section -->
-                        <section>
-                            <h2>Search the Cornell Bathroom Excel Database</h2>
-                            <p>Below is a searchable and filterable table designed to help you quickly and efficiently locate restrooms across the Cornell campus.</p>
-                            <hr class="major" />
-                        </section>
-
-                        <!-- Table Section -->
-                        <header class="main">
-                            <h2>Filter Bathrooms</h2>
-                        </header>
-                        <div class="filter-section">
-                            <label for="building-filter">Building Name:</label>
-                            <input type="text" id="building-filter" placeholder="Enter building name" />
-
-                            <label for="gender-filter">Gender:</label>
-                            <select id="gender-filter">
-                                <option value="">All</option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                                <option value="Neutral">Neutral</option>
-                            </select>
-
-                            <button id="apply-filters">Apply Filters</button>
-                        </div>
-
-                        <table id="bathroom-table" class="display">
-                            <thead>
-								<tr>
-									<th>Building Name</th>
-									<th>Floor</th>
-									<th>Adjacent Rooms</th>
-									<th>Gender</th>
-									<th>Single Occ.</th>
-									<th># Stalls</th>
-									<th># Urinals</th>
-									<th>Urinal Partitions</th>
-									<th>Full Length Door</th>
-									<th>ADA Accessible</th>
-									<th>Hangers</th>
-									<th>Auto. Flushing</th>
-									<th>Free Menstrual Products</th>
-									<th>Changing Table</th>
-									<th>Building Hours</th>
-									<th>Access Restrictions</th>
-									<th>Additional Notes</th>
-								</tr>
-                            </thead>
-                            <tbody>
-                                <!-- Data will be populated dynamically from the CSV file -->
-                            </tbody>
-                        </table>
+                        <h2>Search the Cornell Bathroom Database</h2>
+                        <p>Below is a searchable and filterable table designed to help you quickly and efficiently locate restrooms across the Cornell campus.</p>
+                        <hr class="major" />
                     </section>
 
-                </div>
+                    <header class="main">
+                        <h2>Filter Bathrooms</h2>
+                    </header>
+                    <div class="filter-section">
+                        <label for="building-filter">Building Name:</label>
+                        <input type="text" id="building-filter" placeholder="Enter building name" />
+
+                        <label for="gender-filter">Gender:</label>
+                        <select id="gender-filter">
+                            <option value="">All</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Neutral">Neutral</option>
+                        </select>
+
+                        <button id="apply-filters">Apply Filters</button>
+                    </div>
+
+                    <table id="bathroom-table" class="display">
+                        <thead>
+                            <tr>
+                                <th>Building Name</th>
+                                <th>Floor</th>
+                                <th>Adjacent Rooms</th>
+                                <th>Gender</th>
+                                <th>Single Occ.</th>
+                                <th># Stalls</th>
+                                <th># Urinals</th>
+                                <th>Urinal Partitions</th>
+                                <th>Full Length Door</th>
+                                <th>ADA Accessible</th>
+                                <th>Hangers</th>
+                                <th>Auto. Flushing</th>
+                                <th>Free Menstrual Products</th>
+                                <th>Changing Table</th>
+                                <th>Building Hours</th>
+                                <th>Access Restrictions</th>
+                                <th>Additional Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </section>
             </div>
-
-            <!-- Sidebar -->
-            <div id="sidebar">
-                <div class="inner">
-                    <nav id="menu">
-                        <header class="major">
-                            <h2>Menu</h2>
-                        </header>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="find.html">Find a Bathroom</a></li>
-                            <li><a href="about.html">About the Project</a></li>
-                            <li><a href="mission.html">Our Purpose</a></li>
-                            <li><a href="contact.html">Get in Touch</a></li>
-                        </ul>
-                    </nav>
-
-                    <footer id="footer">
-                        <p class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-                    </footer>
-
-                </div>
-            </div>
-
         </div>
 
-        <!-- Scripts -->
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="find.html">Find a Bathroom</a></li>
+                        <li><a href="about.html">About the Project</a></li>
+                        <li><a href="mission.html">Our Purpose</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </nav>
+                <footer id="footer">
+                    <p class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
 
-        <!-- Initialize DataTable and Load CSV -->
-        <script>
-            $(document).ready(function() {
-                // Initialize DataTable
-                $('#bathroom-table').DataTable();  // Initialize DataTable
+    <!-- Scripts -->
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-                // Load and parse the CSV file
-                Papa.parse("bathrooms.csv", {
-                    download: true,
-                    header: true,
-					info: false,
-                    dynamicTyping: true,
-                    complete: function(results) {
-                        console.log("CSV data loaded:", results.data);  // Debugging line
+    <script>
+        $(document).ready(function () {
+            // Initialize DataTable
+            var table = $('#bathroom-table').DataTable();
 
-                        var data = results.data;
-
-                        // Populate table with CSV data
-                        var table = $('#bathroom-table').DataTable();  // Make sure DataTable is initialized before adding data
-
-                        data.forEach(function(row) {
-                            table.row.add([
-							row["Building Name"],
-							row["Floor"],
-							row["Adjacent Rooms"],
-							row["Gender"],
-							row["Single Occ."],
-							row["# Stalls"],
-							row["# Urinals"],
-							row["Urinal Partitions"],
-							row["Full Length Door"],
-							row["ADA Accessible"],
-							row["Hangers"],
-							row["Auto. Flushing"],
-							row["Free Menstrual Products"],
-							row["Changing Table"],
-							row["Building Hours"],
-							row["Access Restrictions"],
-							row["Additional Notes"]
-                            ]).draw();
-                        });
-                    },
-                    error: function(err) {
-                        console.error("Error loading CSV:", err);
-                    }
-                });
-
-                // Filter Logic
-                $('#apply-filters').on('click', function() {
-                    var buildingFilter = $('#building-filter').val().trim().toLowerCase();
-                    var genderFilter = $('#gender-filter').val();
-
-                    var table = $('#bathroom-table').DataTable();  // Reference to the initialized table
-
-                    table.rows().every(function(rowIdx, tableLoop, rowLoop) {
-                        var row = this.data();
-                        var matchesBuilding = !buildingFilter || row[0].toLowerCase().includes(buildingFilter);
-                        var matchesGender = !genderFilter || row[3] === genderFilter;
-
-                        if (matchesBuilding && matchesGender) {
-                            $(this.node()).show();
-                        } else {
-                            $(this.node()).hide();
-                        }
+            // Load CSV data and populate the table
+            Papa.parse("bathrooms.csv", {
+                download: true,
+                header: true,
+                complete: function (results) {
+                    results.data.forEach(function (row) {
+                        table.row.add([
+                            row["Building Name"],
+                            row["Floor"],
+                            row["Adjacent Rooms"],
+                            row["Gender"],
+                            row["Single Occ."],
+                            row["# Stalls"],
+                            row["# Urinals"],
+                            row["Urinal Partitions"],
+                            row["Full Length Door"],
+                            row["ADA Accessible"],
+                            row["Hangers"],
+                            row["Auto. Flushing"],
+                            row["Free Menstrual Products"],
+                            row["Changing Table"],
+                            row["Building Hours"],
+                            row["Access Restrictions"],
+                            row["Additional Notes"]
+                        ]).draw(false);
                     });
-                });
+                }
             });
-        </script>
 
-    </body>
+            // Filter logic
+            $('#apply-filters').click(function () {
+                table.columns(0).search($('#building-filter').val()).columns(3).search($('#gender-filter').val()).draw();
+            });
+        });
+    </script>
+</body>
 </html>
