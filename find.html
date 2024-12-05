@@ -60,7 +60,7 @@
                         <button id="apply-filters">Apply Filters</button>
                     </div>
 
-                    <table id="bathroom-table" class="display">
+                    <table id="bathroom-table" class="display" data-page-length = '100'>
                         <thead>
                             <tr>
                                 <th>Building Name</th>
@@ -121,8 +121,6 @@
         $(document).ready(function () {
             // Initialize DataTable
             var table = $('#bathroom-table').DataTable({pageLength: 100});
-
-			console.log($.fndataTable.version)
             // Load CSV data and populate the table
             Papa.parse("bathrooms.csv", {
                 download: true,
