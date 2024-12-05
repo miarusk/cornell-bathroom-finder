@@ -120,7 +120,7 @@
     <script>
         $(document).ready(function () {
             // Initialize DataTable
-            var table = $('#bathroom-table').DataTable({pageLength: 100});
+            var table = $('#bathroom-table').DataTable();
             // Load CSV data and populate the table
             Papa.parse("bathrooms.csv", {
                 download: true,
