@@ -49,11 +49,31 @@
                         <h2>Filter Bathrooms</h2>
                     </header>
                     <div class="filter-section">
+
+						<style>
+							.filter-section {
+								display: flex; /* Use flexbox to arrange elements in a row */
+								align-items: center; /* Align items vertically in the center */
+								gap: 10px; /* Add space between elements */
+							}
+					
+							.small-input {
+								width: 175px !important;
+							}
+							.small-select {
+								width: 100px !important;
+							}
+							
+							label {
+								margin-right: 10px; /* Add space between label and input/select */
+							}
+						</style>
+
                         <label for="building-filter">Building Name:</label>
-                        <input type="text" id="building-filter" placeholder="Enter building name" />
+                        <input type="text" id="building-filter" placeholder="Enter building name" class="small-input"/>
 
                         <label for="gender-filter">Gender:</label>
-                        <select id="gender-filter">
+                        <select id="gender-filter" class="small-select">
                             <option value="">All</option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
@@ -62,8 +82,9 @@
 
                         <button id="apply-filters">Apply Filters</button>
                     </div>
-					<div style="overflow-x:auto;">
-                    <table id="bathroom-table" class="display" data-page-length = '100'>
+					<div style="overflow-x:auto">
+						<div class="table-wrapper">
+						<table id="bathroom-table" class="display" data-page-length = '100'>
                         <thead>
                             <tr>
                                 <th>Building Name</th>
@@ -88,7 +109,8 @@
                         <tbody>
                         </tbody>
                     </table>
-				</div>
+					</div>
+					</div>
                 </section>
             </div>
         </div>
@@ -115,9 +137,6 @@
 							<li><a href="contact.html">Get in Touch</a></li>
 						</ul>
 					</nav>
-
-
-
 
 				<!-- Footer -->
 				<footer id="footer">

@@ -1440,11 +1440,16 @@ ul.pagination {
 /* Table */
 .table-wrapper {
   -webkit-overflow-scrolling: touch;
-  overflow-x: auto; }
+  overflow-x: auto; 
+  max-width: 900px; /* Limit the width of the table container */
+
+}
 
 table {
   margin: 0 0 2em 0;
-  width: 100%; }
+  width: 100%; 
+
+}
   table tbody tr {
     border: solid 1px rgba(210, 215, 217, 0.75);
     border-left: 0;
@@ -1998,7 +2003,7 @@ button,
       width: inherit; }
   #sidebar.inactive {
     margin-left: -26em; }
-  @media screen and (max-width: 1680px) {
+  @media screen and (min-width: 1024px) {
     #sidebar {
       width: 24em; }
       #sidebar > .inner {
