@@ -122,6 +122,7 @@
             // Initialize DataTable
             var table = $('#bathroom-table').DataTable({pageLength: 100});
 
+			console.log($.fndataTable.version)
             // Load CSV data and populate the table
             Papa.parse("bathrooms.csv", {
                 download: true,
