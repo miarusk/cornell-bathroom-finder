@@ -39,7 +39,10 @@
                     <section>
                         <h2>Search the Cornell Bathroom Database</h2>
                         <p>Below is a searchable and filterable table designed to help you quickly and efficiently locate restrooms across the Cornell campus.</p>
-                        <hr class="major" />
+                        
+						<p>For detailed instructions on how to use the website and apply filtering criteria, refer to our comprehensive <a href="https://docs.google.com/document/d/14MaDmE5sQZ6g8vZ8J8bfK2-c2L6yyVUt7nume_zxb04/edit?usp=sharing" target="_blank">user guide</a> .</p>
+
+						<hr class="major" />
                     </section>
 
                     <header class="main">
@@ -83,33 +86,46 @@
                             </tr>
                         </thead>
                         <tbody>
-						</div>
                         </tbody>
                     </table>
+				</div>
                 </section>
             </div>
         </div>
 
         <!-- Sidebar -->
         <div id="sidebar">
-            <div class="inner">
-                <nav id="menu">
-                    <header class="major">
-                        <h2>Menu</h2>
-                    </header>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="find.html">Find a Bathroom</a></li>
-                        <li><a href="about.html">About the Project</a></li>
-                        <li><a href="mission.html">Our Purpose</a></li>
-                        <li><a href="contact.html">Get in Touch</a></li>
-                    </ul>
-                </nav>
-                <footer id="footer">
-                    <p class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-                </footer>
-            </div>
-        </div>
+			<div class="inner">
+
+				<!-- Space -->
+				<section id="search" class="alt">
+					<div style="height: 0px;"></div>
+				</section>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<header class="major">
+							<h2>Menu</h2>
+						</header>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="find.html">Find a Bathroom</a></li>
+							<li><a href="about.html">About the Project</a></li>
+							<li><a href="mission.html">Our Purpose</a></li>
+							<li><a href="contact.html">Get in Touch</a></li>
+						</ul>
+					</nav>
+
+
+
+
+				<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+
+			</div>
+		</div>
     </div>
 
     <!-- Scripts -->
@@ -126,6 +142,7 @@
             Papa.parse("bathrooms.csv", {
                 download: true,
                 header: true,
+				scrollX: true,
                 complete: function (results) {
                     results.data.forEach(function (row) {
                         table.row.add([
